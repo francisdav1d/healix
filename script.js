@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
     mentalHealthButton.addEventListener('click', () => {
-      window.location.href = './mentalhealth/index.html';
+      window.location.href = './mentalfitness/index.html';
     });
   
     physicalHealthButton.addEventListener('click', () => {
