@@ -1,0 +1,107 @@
+/* Color Palette */
+
+:root {
+    --primary: #CAE5FF;   /* Light Blue */
+    --secondary: #000000; /* Deep Blue */
+    --accent: #F46197;    /* Pink */
+    --highlight: #2CA58D; /* Teal */
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    background: var(--primary);
+    text-align: center;
+    padding: 20px;
+    color: var(--secondary);
+}
+ .heading{
+    color: #17328c;
+    font-family: "Knewave", serif;
+        font-weight: 400;
+    font-style: x-large;
+    font-size: 35px;
+ }
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+h1 {
+   
+    font-size: 28px;
+    color: var(--secondary);
+}
+
+.task-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.task-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.task-card * {
+    position: relative;
+    z-index: 1;
+}
+
+.task-card h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.task-card p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.streak {
+    font-size: 16px;
+    font-weight: bold;
+    background: var(--highlight);
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.difficulty {
+    font-size: 16px;
+    color: var(--accent);
+}
+
+.complete-btn {
+    background: var(--secondary);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.complete-btn:hover {
+    background: var(--accent);
+}
+
