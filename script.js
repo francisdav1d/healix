@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
     tasksButton.addEventListener('click', () => {
-      alert('Tasks button clicked'); // Change this to desired functionality
+      window.location.href = './tasks/index.html';
     });
   
     achievementsButton.addEventListener('click', () => {
@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
     physicalHealthButton.addEventListener('click', () => {
-      window.location.href = './physicalhealth/index.html';
+      window.location.href = './physicalfitness/index.html';
     });
   });
