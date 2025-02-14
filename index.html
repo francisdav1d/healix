@@ -9,27 +9,25 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="top-nav">
       <div class="logo">
         <h1>Healix</h1>
       </div>
+      <div class="login-container">
+        <button class="login-button" id="login-button">Login</button>
+      </div>
+    </nav>
+    <nav class="main-nav">
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" id="tasks-button">Tasks</a></li>
+        <li><a href="#" id="achievements-button">Achievements</a></li>
+        <li><a href="#" id="physical-health-button">Physical Health</a></li>
+        <li><a href="#" id="mental-health-button">Mental Health</a></li>
       </ul>
-      <button class="login-button" onclick="login()">Login</button>
     </nav>
   </header>
-
+  
   <main>
-    <section class="hero">
-      <h2>Welcome to Healix</h2>
-      <p>Your journey to a healthier life starts here.</p>
-      <button class="learn-more" onclick="learnMore()">Learn More</button>
-    </section>
-
     <section class="start-routine">
       <button class="start-routine-button" onclick="startRoutine()">Start Your Routine</button>
     </section>
@@ -64,7 +62,7 @@
       </div>
     </section>
 
-    <section class="achievements">
+    <section class="achievements" id="achievements">
       <h3>Achievements</h3>
       <p>Track your progress and celebrate your milestones.</p>
       <div class="achievement-list">

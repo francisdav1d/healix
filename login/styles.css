@@ -9,7 +9,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #85C1E9;
+    background: #2274A5; /* Dark Blue */
+    color: #FFFFFF; /* White */
 }
 
 .container {
@@ -25,7 +26,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #85C1E9;
+    background: #CAE5FF; /* Dark Blue */
     z-index: -1;
 }
 
@@ -33,18 +34,18 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    
     z-index: -1;
 }
 
 .content {
     text-align: center;
-    color: #FFFFFF;
+    color: #FFFFFF; /* White */
     animation: fadeIn 2s ease-in-out;
 }
 
 .logo h1 {
-    font-size: 3em;
+    font-size: 3.5em; /* Larger logo */
     margin: 0;
     text-transform: uppercase;
     font-weight: bold;
@@ -56,7 +57,7 @@ body {
 }
 
 .login-signup {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9); /* Light background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -68,38 +69,48 @@ body {
     animation: slideIn 1s ease-in-out;
 }
 
+h1{
+    color: #2274A5; /* Green */
+}
+
+p {
+    color:#2274A5
+}
 h2 {
     margin-bottom: 20px;
-    color: #1ABC9C;
+    color: #2CA58D; /* Green */
 }
 
 input[type="text"], input[type="password"] {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #2CA58D; /* Green */
     border-radius: 5px;
     box-sizing: border-box;
 }
 
 button {
-    background: #1ABC9C;
+    background: #F46197; /* Pink */
     color: white;
     border: none;
-    padding: 10px;
+    padding: 15px; /* Larger button */
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
+    font-size: 1.2em; /* Larger font size */
 }
 
 button:hover {
-    background: #16A085;
-    transform: scale(1.05);
+    background: #e04b80; /* Darker Pink */
+    transform: scale(1.1);
 }
 
 a {
-    color: #1ABC9C;
+    color: #2CA58D; /* Green */
     text-decoration: none;
+    display: block;
+    margin-top: 20px;
 }
 
 a:hover {
