@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cocogoose:wght@700&display=swap');
+
+body {
+    font-family: 'Cocogoose', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #85C1E9;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #85C1E9;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.content {
+    text-align: center;
+    color: #FFFFFF;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.logo h1 {
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.logo p {
+    font-size: 1.2em;
+    margin: 5px 0 20px;
+}
+
+.login-signup {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-container {
+    animation: slideIn 1s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1ABC9C;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #1ABC9C;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #16A085;
+    transform: scale(1.05);
+}
+
+a {
+    color: #1ABC9C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
