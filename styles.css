@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #1a1a2e;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  header {
+    background-color: #16213e;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo h1 {
+    color: #e94560;
+    font-weight: 700;
+    animation: fadeInDown 1s;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #e94560;
+  }
+  
+  .login-button {
+    background-color: #e94560;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #d43f57;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+    color: #ffffff;
+    animation: fadeInUp 1s;
+  }
+  
+  .hero .learn-more {
+    background-color: #e94560;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .hero .learn-more:hover {
+    background-color: #d43f57;
+    transform: scale(1.05);
+  }
+  
+  .start-routine {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #16213e;
+    animation: fadeInUp 1s;
+  }
+  
+  .start-routine-button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e94560;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .features, .health-sections, .achievements, .chatbot {
+    padding: 50px 20px;
+    background-color: #16213e;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .feature, .health-section, .achievement, .chatbot {
+    margin-bottom: 20px;
+    animation: fadeInUp 1s;
+  }
+  
+  .achievement-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .achievement {
+    background-color: #0f3460;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .achievement:hover {
+    transform: scale(1.05);
+  }
+  
+  .chatbot-button {
+    background-color: #e94560;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .chatbot-button:hover {
+    background-color: #d43f57;
+    transform: scale(1.05);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #16213e;
+    color: #ffffff;
+    transition: background-color 0.5s;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Dark Theme */
+  body.dark-theme {
+    background-color: #0f3460;
+    color: #fff;
+  }
+  
+  header.dark-theme {
+    background-color: #1a1a2e;
+  }
+  
+  footer.dark-theme {
+    background-color: #1a1a2e;
+  }

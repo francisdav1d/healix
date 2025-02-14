@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healix - Health and Fitness</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Healix</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="login-button" onclick="login()">Login</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to Healix</h2>
+      <p>Your journey to a healthier life starts here.</p>
+      <button class="learn-more" onclick="learnMore()">Learn More</button>
+    </section>
+
+    <section class="start-routine">
+      <button class="start-routine-button" onclick="startRoutine()">Start Your Routine</button>
+    </section>
+
+    <section class="features" id="services">
+      <div class="feature">
+        <h3>Personalized Plans</h3>
+        <p>Get a fitness plan tailored to your needs.</p>
+      </div>
+      <div class="feature">
+        <h3>Expert Advice</h3>
+        <p>Receive guidance from health and fitness experts.</p>
+      </div>
+      <div class="feature">
+        <h3>Community Support</h3>
+        <p>Join a community of like-minded individuals.</p>
+      </div>
+    </section>
+
+    <section class="health-sections">
+      <div class="health-section" id="mental-health">
+        <h3>Mental Health</h3>
+        <p>Explore resources and tips to improve your mental well-being.</p>
+      </div>
+      <div class="health-section" id="physical-health">
+        <h3>Physical Health</h3>
+        <p>Learn about exercises and routines to keep your body in shape.</p>
+      </div>
+      <div class="health-section" id="routine">
+        <h3>Routine</h3>
+        <p>Build a daily routine that promotes health and productivity.</p>
+      </div>
+    </section>
+
+    <section class="achievements">
+      <h3>Achievements</h3>
+      <p>Track your progress and celebrate your milestones.</p>
+      <div class="achievement-list">
+        <div class="achievement">Completed 30-day workout challenge</div>
+        <div class="achievement">Meditated for 10 consecutive days</div>
+        <div class="achievement">Achieved 8 hours of sleep for a week</div>
+      </div>
+    </section>
+
+    <section class="chatbot">
+      <h3>Chat with Us</h3>
+      <p>Need help? Our chatbot is here to assist you.</p>
+      <button class="chatbot-button" onclick="openChatbot()">Open Chatbot</button>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>&copy; 2025 Healix. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
