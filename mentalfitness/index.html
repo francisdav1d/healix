@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mental Health</h1>
+    </header>
+    <div class="container">
+        <div class="meditation-timer">
+            <h2>Meditation Timer</h2>
+            <label for="timeSelect">Select Meditation Time:</label>
+            <select id="timeSelect" class="styled-select">
+                <option value="5">5 minutes</option>
+                <option value="10">10 minutes</option>
+                <option value="15">15 minutes</option>
+                <option value="20">20 minutes</option>
+            </select>
+            <label for="practiceSelect">Select Meditation Practice:</label>
+            <select id="practiceSelect" class="styled-select" onchange="showPracticeExplanation()">
+                <option value="breathing">Breathing Exercise</option>
+                <option value="guided">Guided Meditation</option>
+                <option value="mindfulness">Mindfulness Meditation</option>
+                <option value="stretching">Stretching Exercises</option>
+                <option value="yoga">Yoga Exercises</option>
+            </select>
+            <div class="practice-explanation" id="practiceExplanation"></div>
+            <div class="timer" id="timer">05:00</div>
+            <button onclick="startTimer()" class="timer-button">Start Meditation</button>
+            <button onclick="stopTimer()" class="timer-button">Stop Meditation</button>
+            <audio id="calmingMusic1" src="calming-music1.mp3" preload="auto"></audio>
+            <audio id="calmingMusic2" src="calming-music2.mp3" preload="auto"></audio>
+            <audio id="calmingMusic3" src="calming-music3.mp3" preload="auto"></audio>
+        </div>
+        <div class="exercise-media" id="exerciseMedia"></div>
+        <div class="motivational-quotes">
+            <h2>Motivational Quotes</h2>
+            <div id="quote" class="quote"></div>
+        </div>
+        <div class="mood-tips">
+            <h2>Mood Improvement Tips</h2>
+            <div id="tips" class="tip"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

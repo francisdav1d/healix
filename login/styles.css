@@ -74,7 +74,10 @@ h1{
 }
 
 p {
+    font-family: "Shadows Into Light Two", serif;
     color:#2274A5
+    
+
 }
 h2 {
     margin-bottom: 20px;
@@ -105,7 +108,11 @@ button:hover {
     background: #e04b80; /* Darker Pink */
     transform: scale(1.1);
 }
-
+h1 {
+    font-family: "Lacquer", serif;
+    font-weight: 200;
+    font-size:large;
+  }
 a {
     color: #2CA58D; /* Green */
     text-decoration: none;

@@ -29,21 +29,22 @@ header {
     max-width: 800px;
 }
 
-.meditation-timer, .motivational-quotes, .mood-tips {
+.meditation-timer, .motivational-quotes, .mood-tips, .exercise-section {
     margin-bottom: 2em;
-    background-color: #2274A5; /* Blue background */
+    background-color: #FFFFFF; /* White background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.meditation-timer:hover, .motivational-quotes:hover, .mood-tips:hover {
+.meditation-timer:hover, .motivational-quotes:hover, .mood-tips:hover, .exercise-section:hover {
     transform: translateY(-10px);
+    background-color: #CAE5FF; /* Light blue background on hover */
 }
 
-.meditation-timer h2, .motivational-quotes h2, .mood-tips h2 {
-    color: #FFFFFF; /* White text color */
+.meditation-timer h2, .motivational-quotes h2, .mood-tips h2, .exercise-section h2 {
+    color: #2274A5; /* Dark blue text color */
 }
 
 .motivational-quotes p, .mood-tips p {
@@ -57,32 +58,32 @@ header {
 }
 
 .motivational-quotes p:hover, .mood-tips p:hover {
-    background-color: #F46197; /* Pink background */
+    background-color: #F46197; /* Pink background on hover */
 }
 
 .timer {
     font-size: 4em;
     font-weight: bold;
     margin-bottom: 1em;
-    color: #FFFFFF; /* White text color */
+    color: #2274A5; /* Dark blue text color */
     transition: color 0.3s ease;
 }
 
-button {
-    background-color: #2CA58D; /* Green background */
-    color: white;
-    border: none;
-    padding: 1em 2em;
+button.timer-button, .styled-select {
+    background-color: #FFFFFF; /* White background */
+    color: #2274A5; /* Dark blue text color */
+    border: 2px solid #2CA58D; /* Green border */
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 0.5em 1em;
     font-size: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-bottom: 1em;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #2274A5; /* Blue background */
-    transform: translateY(-2px);
+button.timer-button:hover, .styled-select:hover {
+    background-color: #CAE5FF; /* Light blue background on hover */
+    border-color: #2274A5; /* Dark blue border on hover */
 }
 
 audio {
@@ -91,12 +92,18 @@ audio {
 
 .practice-explanation {
     margin-top: 1em;
-    color: #CAE5FF; /* Light blue text color */
+    color: #2274A5; /* Dark blue text color */
     font-size: 1.2em;
 }
 
-.exercise-animation {
+.exercise-media {
     margin-top: 2em;
     display: flex;
     justify-content: center;
+}
+
+.exercise-video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }

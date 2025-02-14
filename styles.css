@@ -35,6 +35,7 @@ body {
   }
   
   .login-button {
+    font-family: "Shadows Into Light Two", serif;
     background-color: #F46197;
     color: white;
     border: none;
@@ -57,12 +58,18 @@ body {
   }
   
   .nav-links {
+    font-family: "Shadows Into Light Two", serif;
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: flex-start;
     width: 100%;
     padding: 10px;
+  }
+  h1 {
+    font-family: "Lacquer", serif;
+    font-weight: 20000;
+    font-size:x-large;
   }
   
   .nav-links li {
@@ -235,4 +242,8 @@ body {
   footer p {
     color: #2274A5;
     margin: 0;
+  }
+
+  .start-routine-button{
+    font-family: "Shadows Into Light Two", serif;
   }
