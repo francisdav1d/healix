@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Task Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="live-clock" id="liveClock"></div>
+        <h1>My routine</h1>
+        <form id="taskForm">
+            <div class="time-inputs">
+                <div class="time-input-container">
+                    <input type="time" id="startTime" required>
+                    <label class="time-label">Start Time</label>
+                </div>
+                <div class="time-input-container">
+                    <input type="time" id="endTime" required>
+                    <label class="time-label">End Time</label>
+                </div>
+            </div>
+
+            <div class="task-input-wrapper">
+                <input type="text" id="task" placeholder="Enter task..." required>
+                
+                <button type="submit" class="submit-btn"> Assign Task</button>
+            </div>
+        </form>
+
+        <h2>Task List</h2>
+        <ul id="taskList"></ul>
+    </div>
+</body>
+</html>

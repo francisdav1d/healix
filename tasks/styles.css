@@ -3,8 +3,8 @@
 :root {
     --primary: #CAE5FF;   /* Light Blue */
     --secondary: #000000; /* Deep Blue */
-    --accent: #F46197;    /* Pink */
-    --highlight: #2CA58D; /* Teal */
+    --accent: #ffffff;    /* Pink */
+    --highlight: #000000; /* Teal */
     --white: #FFFFFF;
 }
 
@@ -17,11 +17,9 @@ body {
     color: var(--secondary);
 }
  .heading{
-    color: #17328c;
-    font-family: "Knewave", serif;
-        font-weight: 400;
-    font-style: x-large;
-    font-size: 35px;
+    font-family: "Lacquer", serif;
+    font-optical-sizing: auto;
+    font-color:blue;
  }
 .container {
     max-width: 500px;
