@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
     achievementsButton.addEventListener('click', () => {
-      alert('Achievements button clicked'); // Change this to desired functionality
+      window.location.href = './acheivements/index.html';
     });
   
     mentalHealthButton.addEventListener('click', () => {
