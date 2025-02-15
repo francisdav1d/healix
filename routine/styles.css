@@ -1,0 +1,208 @@
+/* Color Variables */
+:root {
+    --teal: #68b8f5;
+    --lilac: #89e2c6;
+    --orange: #ff8c00;
+    --green: #4CAF50;
+    --dark: #333;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, var(--teal), var(--lilac));
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark);
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    width: 90%;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h2 {
+    color: var(--dark);
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Form Styles */
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.time-inputs {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.time-input-container {
+    flex: 1;
+    position: relative;
+}
+
+input[type="time"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--lilac);
+    border-radius: 8px;
+    font-size: 1rem;
+    background: var(--white);
+    color: var(--dark);
+    transition: all 0.3s ease;
+}
+
+input[type="time"]:focus {
+    border-color: var(--orange);
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.3);
+    outline: none;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--lilac);
+    border-radius: 8px;
+    font-size: 1rem;
+    background: var(--white);
+    color: var(--dark);
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: var(--orange);
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.3);
+    outline: none;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, var(--orange), #ff6b00);
+    color: var(--white);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 140, 0, 0.4);
+}
+
+/* Task List Styles */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    background: var(--white);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.task-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.task-item.completed {
+    background: linear-gradient(135deg, var(--green), #45a049);
+    color: var(--white);
+    animation: completeFlip 0.8s ease-out;
+}
+
+.task-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.complete-btn {
+    background: var(--teal);
+    color: var(--dark);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.complete-btn:hover {
+    background: #5ad1b9;
+}
+
+.delete-btn {
+    background: var(--orange);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+    background: #e67e22;
+}
+
+/* Animations */
+@keyframes completeFlip {
+    0% { transform: perspective(600px) rotateX(0) scale(1); }
+    50% { transform: perspective(600px) rotateX(360deg) scale(1.2); }
+    100% { transform: perspective(600px) rotateX(0) scale(1); }
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-10px) scale(1.05); }
+    100% { transform: translateY(0) scale(1); }
+}
+
+/* Live Clock */
+.live-clock {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--dark);
+    animation: floatUp 3s ease-in-out infinite;
+}

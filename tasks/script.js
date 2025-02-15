@@ -24,6 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
 
         tasksContainer.appendChild(taskCard);
+
+        // Add fade-in effect
+        taskCard.style.opacity = 0;
+        taskCard.style.transform = "translateY(20px)";
+        taskCard.style.transition = "opacity 1s, transform 1s";
+        setTimeout(() => {
+            taskCard.style.opacity = 1;
+            taskCard.style.transform = "translateY(0)";
+        }, 100 * index);
     });
 
     document.querySelectorAll(".complete-btn").forEach(btn => {
@@ -33,7 +42,28 @@ document.addEventListener("DOMContentLoaded", () => {
             let streak = parseInt(streakElement.textContent);
             streakElement.textContent = streak + 1;
             e.target.disabled = true;
+
+            // Add a subtle scale animation on button click
+            e.target.style.transform = "scale(0.95)";
+            e.target.style.transition = "transform 0.2s";
+            setTimeout(() => {
+                e.target.style.transform = "scale(1)";
+            }, 200);
+        });
+    });
+
+    // Add fade-out effect on scroll
+    window.addEventListener("scroll", () => {
+        const windowHeight = window.innerHeight;
+        document.querySelectorAll(".task-card").forEach(taskCard => {
+            const rect = taskCard.getBoundingClientRect();
+            if (rect.top < 0) {
+                taskCard.style.opacity = 0;
+                taskCard.style.transition = "opacity 1s";
+            } else {
+                taskCard.style.opacity = 1;
+                taskCard.style.transition = "opacity 1s";
+            }
         });
     });
 });
-

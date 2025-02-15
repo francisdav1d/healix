@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const achievementsButton = document.getElementById('achievements-button');
     const mentalHealthButton = document.getElementById('mental-health-button');
     const physicalHealthButton = document.getElementById('physical-health-button');
+    const routine = document.getElementById('routine');
   
     loginButton.addEventListener('click', () => {
       window.location.href = './login/index.html';
@@ -22,6 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
     physicalHealthButton.addEventListener('click', () => {
-      window.location.href = './physicalfitness/index.html';
+      window.location.href = './physicalhealth/index.html';
     });
+
+    document.getElementById("routine").addEventListener("click", () => {
+      window.location.href = "./routine/index.html";
+  });
+  
+  
   });
