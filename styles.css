@@ -1,3 +1,8 @@
+p{
+  font-family: "The Girl Next Door", serif;
+}
+
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -8,7 +13,8 @@ body {
     background-color: #CAE5FF;
     padding: 10px 0;
   }
-  
+
+   
   .top-nav {
     display: flex;
     justify-content: space-between;
@@ -71,6 +77,11 @@ body {
     font-weight: 20000;
     font-size:x-large;
   }
+
+  h3{
+    font-family: "Lacquer", serif;
+  }
+  
   
   .nav-links li {
     margin: 0 20px;
